@@ -1,0 +1,35 @@
+<departments>
+    <department>
+        <name>Computer Science</name>
+        <code>CSCI</code>
+        <years>
+            <year>
+                <name>Freshman</name>
+                <students>
+                    <student>
+                        <id>123456</id>
+                        <name>John Doe</name>
+                    </student>
+                    <student>
+                        <id>789012</id>
+                        <name>Jane Smith</name>
+                    </student>
+                </students>
+            </year>
+            <year>
+                <name>Sophomore</name>
+                <students>
+                    <!-- Add Sophomore students here -->
+                </students>
+            </year>
+        </years>
+    </department>
+    <department>
+        <name>Electrical Engineering</name>
+        <code>EE</code>
+        <years>
+            <!-- Add Electrical Engineering years and students here -->
+        </years>
+    </department>
+    <!-- Add more departments as needed -->
+</departments>
