@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <style>
+        
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Map</h1>
+    
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <script>
+
+        function initMap() {
+
+            var center = { lat: 40.7128, lng: -74.0060 }; 
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12, 
+                center: center
+            });
+
+
+            var marker = new google.maps.Marker({
+                position: center,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
